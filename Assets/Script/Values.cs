@@ -10,11 +10,12 @@ public class Values : MonoBehaviour
     {
         val.Add("Authority", 10);
     }
-    
+
     void Update()
     {
-        val["Authority"] += 1;
+        limitCondition();
     }
+    
 
     public void SaveValues()
     {
@@ -28,6 +29,18 @@ public class Values : MonoBehaviour
         ValueData valdata = SaveScript.Load();
         this.val = valdata.val;
         print("Current Load Value " + val["Authority"]);
+    }
+
+    private void limitCondition()
+    {
+        if (val["Authority"] > 100)
+        {
+            val["Authority"] = 100;
+        }
+        if (val["Authority"] < 0)
+        {
+            val["Authority"] = 0;
+        }
     }
 
 }
