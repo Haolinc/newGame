@@ -9,6 +9,9 @@ public class Values : MonoBehaviour
     void Start()
     {
         val.Add("Authority", 10);
+        val.Add("Health", 100);
+        val.Add("TimeElapse", 0);
+        val.Add("ActualTime", 1234);
     }
 
     void Update()

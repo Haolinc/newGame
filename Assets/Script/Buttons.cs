@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Button : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     public void closeAll()
     {
@@ -13,12 +13,14 @@ public class Button : MonoBehaviour
         GameObject stat = GameObject.Find("/Canvas/Buttons&Tabs/Statistic_Tab");
         GameObject menu = GameObject.Find("/Canvas/Buttons&Tabs/Menu_Tab");
         GameObject pstatus = GameObject.Find("/Canvas/Buttons&Tabs/PlayerStatus_Tab");
+        GameObject eventtab = GameObject.Find("/Canvas/Buttons&Tabs/Event_Tab");
         law.SetActive(false);
         min.SetActive(false);
         dip.SetActive(false);
         stat.SetActive(false);
         menu.SetActive(false);
         pstatus.SetActive(false);
+        eventtab.SetActive(false);
     }
     public void lawOpen()
     {

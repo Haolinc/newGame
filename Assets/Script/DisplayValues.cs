@@ -7,11 +7,13 @@ public class DisplayValues : MonoBehaviour
 {
     Values value;
     Text authority;
+    Text health;
     // Start is called before the first frame update
     void Start()
     {
         authority = GameObject.Find("/Canvas/Values/Authority").GetComponent<Text>();
         value = GameObject.Find("ValueHolder").GetComponent<Values>();
+
     }
 
     // Update is called once per frame
