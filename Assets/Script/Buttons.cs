@@ -13,15 +13,20 @@ public class Buttons : MonoBehaviour
         GameObject stat = GameObject.Find("/Canvas/Buttons&Tabs/Statistic_Tab");
         GameObject menu = GameObject.Find("/Canvas/Buttons&Tabs/Menu_Tab");
         GameObject pstatus = GameObject.Find("/Canvas/Buttons&Tabs/PlayerStatus_Tab");
-        GameObject eventtab = GameObject.Find("/Canvas/Buttons&Tabs/Event_Tab");
         law.SetActive(false);
         min.SetActive(false);
         dip.SetActive(false);
         stat.SetActive(false);
         menu.SetActive(false);
         pstatus.SetActive(false);
-        eventtab.SetActive(false);
     }
+
+    public void closeDecisionTab()
+    {
+        GameObject decisiontab = GameObject.Find("/Canvas/Buttons&Tabs/Decision_Tab");
+        decisiontab.SetActive(false);
+    }
+
     public void lawOpen()
     {
         GameObject law = GameObject.Find("/Canvas/Buttons&Tabs/Law_Tab");
