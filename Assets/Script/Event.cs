@@ -41,6 +41,7 @@ public class Event : MonoBehaviour
             value.val[key] = v;
         else if (sign == -1)
             value.val[key] -= v;
+        eventTab.SetActive(false);
     }
 
 }

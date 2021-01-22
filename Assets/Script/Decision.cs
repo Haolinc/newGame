@@ -19,6 +19,7 @@ public class Decision : MonoBehaviour
         choice1 = GameObject.Find("/Canvas/Buttons&Tabs/Decision_Tab/OK/Text").GetComponent<Text>();
         iconGreen = Resources.Load<Sprite>("ScriptIcons/green");
         iconGrey = Resources.Load<Sprite>("ScriptIcons/grey");
+        SetUpDecisionText();
     }
 
     public void CheatOpen()
@@ -60,6 +61,12 @@ public class Decision : MonoBehaviour
 
     void SetUpDecisionText()
     {
-
+        Text cheatText, addAuthority, subAuthority;
+        cheatText = GameObject.Find("/Canvas/Buttons&Tabs/Law_Tab/Cheat Decision/Text").GetComponent<Text>();
+        addAuthority = GameObject.Find("/Canvas/Buttons&Tabs/Law_Tab/DecisionButton/Text").GetComponent<Text>();
+        subAuthority = GameObject.Find("/Canvas/Buttons&Tabs/Law_Tab/DecisionButton (2)/Text").GetComponent<Text>();
+        cheatText.text = "开启作弊菜单";
+        addAuthority.text = "增加皇帝权威";
+        subAuthority.text = "减少皇帝权威";
     }
 }

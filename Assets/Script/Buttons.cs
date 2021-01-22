@@ -19,6 +19,7 @@ public class Buttons : MonoBehaviour
         stat.SetActive(false);
         menu.SetActive(false);
         pstatus.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void closeDecisionTab()
@@ -56,6 +57,7 @@ public class Buttons : MonoBehaviour
         GameObject menu = GameObject.Find("/Canvas/Buttons&Tabs/Menu_Tab");
         closeAll();
         menu.SetActive(true);
+        Time.timeScale = 0;
     }
     public void pstatusOpen()
     {
